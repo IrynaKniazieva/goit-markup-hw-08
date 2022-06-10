@@ -644,6 +644,12 @@ ul {
   margin-left: 502px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-feature {
+    padding-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .feature {
     display: -webkit-box;
@@ -744,6 +750,12 @@ ul {
 @media screen and (min-width: 1200px) {
   .feature__text {
     width: 270px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section-none {
+    display: none;
   }
 }
 

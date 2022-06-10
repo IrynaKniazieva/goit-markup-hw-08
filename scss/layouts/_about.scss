@@ -1,9 +1,14 @@
 
-
-
-.about__list {
+.section-none {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+ .about__list {
     display: flex;
     justify-content: space-between;
+
+   
 }
 
 .about__item {
@@ -25,11 +30,6 @@
     } 
   
   }
-
-
-
-
-
 
 
 .about__container {
@@ -55,3 +55,6 @@
 
     color: var(--white-color);
   }
+
+
+
