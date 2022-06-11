@@ -72,14 +72,18 @@
 }
 
 .modal-form {
-    width: 528px;
+    width: 450px;
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 }
 
 .modal-title {
    display: flex;
    align-items: center;
    justify-content: center;
-
+    
    margin-top: 40px;
    margin-bottom: 12px;
    
@@ -87,11 +91,21 @@ font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 20px;
-line-height: 1.15;
+line-height: 1.50;
 text-align: center;
 letter-spacing: 0.03em;
 
 color: var(--title-text-color);
+
+@media screen and (min-width: 480px) {
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+    line-height: 1.15;
+}
+
 }
 
 .modal {
@@ -188,9 +202,14 @@ color: #757575;
     align-items: center;
     
     margin-top: 20px;
-    margin-right: 51px;
-    margin-left: 51px;
+    margin-right: 40px;
+    margin-left: 40px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 51px;
+        margin-left: 51px;
+    }
 }
 
 
@@ -236,18 +255,28 @@ color: #757575;
 
 .checkbox__text {
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-
-
-letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
     color: var(--title-text-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .checkbox__link {
+    font-size: 12px;
+    line-height: 1.16;
     color: var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
   }
 
 .modal-form__button {
@@ -255,7 +284,13 @@ letter-spacing: 0.03em;
     padding-bottom: 10px;
     padding-right: 55px;
     padding-left: 56px;
-    margin-left: 165px;
-    margin-right: 163px;
+    margin-left: 125px;
+    margin-right: 125px;
     margin-bottom: 40px;
+
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 165px;
+        margin-right: 163px;
+    }
 }
