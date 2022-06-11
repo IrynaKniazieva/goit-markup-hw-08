@@ -612,7 +612,6 @@ ul {
 
 /* hero */
 .hero {
-  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--bkg-dark-color);
@@ -626,11 +625,15 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding: 200px 0;
     max-width: 1600px;
+    height: 600px;
+    margin: 0;
   }
 }
 
 .hero__title {
+  margin: auto;
   margin-right: 90px;
   margin-left: 90px;
   margin-bottom: 51px;
@@ -643,10 +646,44 @@ ul {
   color: var(--white-color);
 }
 
+@media screen and (min-width: 768px) {
+  .hero__title {
+    margin-right: 189px;
+    margin-left: 189px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 650px;
+  }
+}
+
 .hero__button {
   padding: 10px 32px;
   margin-right: 125px;
   margin-left: 125px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__button {
+    margin-right: 264px;
+    margin-left: 264px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    margin-right: 467px;
+    margin-left: 503px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
