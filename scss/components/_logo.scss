@@ -1,5 +1,7 @@
 .logo {
-    margin-right: 90px;
+    margin: 0;
+    margin-left: 163px;
+    margin-right: 163px;
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -13,6 +15,11 @@
 
     &--white {
         color: var(--white-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+        margin-right: 90px;
     }
 }
 
