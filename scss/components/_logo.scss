@@ -15,12 +15,19 @@
 
     &--white {
         color: var(--white-color);
+
+        @media screen and (min-width: 768px) {
+            margin: 0;
+            margin-left: 115px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin: 0;
+            margin-right: 90px;
+        }
     }
 
-    @media screen and (min-width: 1200px) {
-        margin: 0;
-        margin-right: 90px;
-    }
+    
 }
 
 .logo__span--accent {
