@@ -62,6 +62,8 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1200px;
+  min-width: 320px;
 }
 
 @media screen and (min-width: 480px) {
@@ -101,33 +103,34 @@ ul {
 
 .logo {
   margin: 0;
-  margin-left: 163px;
-  margin-right: 163px;
-  padding-top: 24px;
-  padding-bottom: 24px;
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  text-align: center;
 }
 
 .logo--white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--white-color);
-}
-
-@media screen and (min-width: 768px) {
-  .logo--white {
-    margin: 0;
-    margin-left: 115px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .logo--white {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin: 0;
-    margin-right: 90px;
   }
 }
 
@@ -1073,6 +1076,10 @@ ul {
   background-color: var(--bkg-dark-color);
 }
 
+.footer__container {
+  text-align: center;
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer__container {
     display: -webkit-box;
@@ -1114,9 +1121,6 @@ ul {
 
 .address__list {
   padding-top: 20px;
-  padding-bottom: 60px;
-  margin-right: 124px;
-  margin-left: 124px;
   font-style: normal;
 }
 
@@ -1128,22 +1132,30 @@ ul {
 
 @media screen and (min-width: 768px) {
   .address__list {
-    margin-left: 76px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .address__list {
-    margin: 0;
+    text-align: start;
     margin-right: 70px;
     padding-top: 22px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .social-footer {
-    margin-top: 5px;
-    margin-right: 89px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1174,11 +1186,11 @@ ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 60px;
   }
 }
 
 .footer-subject {
+  padding-top: 60px;
   padding-bottom: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1191,6 +1203,12 @@ ul {
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer-subject {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-subject {
+    padding-top: 0;
   }
 }
 
@@ -1225,6 +1243,19 @@ ul {
 }
 
 /* form for footer */
+@media screen and (max-width: 1199px) {
+  .form-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .form-footer {
     display: -webkit-box;
@@ -1241,6 +1272,9 @@ ul {
 
 @media screen and (max-width: 1199px) {
   .form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1254,11 +1288,31 @@ ul {
   }
 }
 
+.group-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .group-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
 .group-footer__input {
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 16px;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
