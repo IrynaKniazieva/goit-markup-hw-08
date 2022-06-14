@@ -23,11 +23,22 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container">
-        <a class="logo" href="./index.html">
-          <span class="logo__span logo__span--accent">Web</span>Studio</a
-        >
-        <nav class="navigation">
+      <div class="container header-container">
+        <nav class="container__nav">
+          <a class="logo" href="./index.html">
+            <span class="logo__span logo__span--accent">Web</span>Studio</a>
+            <button type="button" class="menu-button is-open" data-menu-button>
+              <svg 
+              width="40" 
+              height="40" 
+              aria-label="Переключатель мобильного меню">
+                <use class="button__icon-crose" href="./images/icons.svg#icon-close-menu"></use>
+                <use class="button__icon-menu" href="./images/icons.svg#icon-menu"> </use>
+              </svg>
+            </button>
+        </nav>
+        
+        <!-- <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="./index.html" class="navigation__link navigation__link--current">Студия</a>
@@ -58,7 +69,7 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul>
+        </ul> -->
       </div>
     </header>
     <main>
@@ -507,5 +518,6 @@
       </div> 
     </footer>
     <script src="./js/modal.js"></script>
+    <script srs="./js/menu.js"> </script>
   </body>
 </html>

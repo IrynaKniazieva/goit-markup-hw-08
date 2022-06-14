@@ -598,18 +598,39 @@ ul {
   border-bottom: 1px solid #EEEEEE;
 }
 
-.header-container {
+.container__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 60px;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.button__icon-crose {
+  display: none;
+}
+
+.is-open .button__icon-crose {
+  display: block;
+}
+
+.is-open .button__icon-menu {
+  display: none;
 }
 
 .navigation__list {
