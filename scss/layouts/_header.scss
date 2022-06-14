@@ -17,15 +17,15 @@
     background-color: transparent;
 }
 
-.button__icon-crose{
+.menu-button .icon-crose{
     display: none;
 }
 
-.is-open .button__icon-crose {
+.menu-button.is-open  .icon-crose {
     display: block;
 }
 
-.is-open .button__icon-menu {
+.menu-button.is-open .icon-menu {
     display: none;
 }
 
