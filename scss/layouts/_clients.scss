@@ -1,7 +1,18 @@
+.clients {
+    width: 100%;
+}
+
 .clients__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+
+    @media screen and (max-width: 1199px) {
+        margin: -15px;
+    }
+    
+    // width: 100%;
+
+    
    
 }
     
@@ -11,8 +22,7 @@
     align-items: center;
     justify-content: center;
 
-    width: 210px;
-    height: 92px;
+    
     
        
     margin: 15px;
@@ -30,6 +40,11 @@
         color: var(--accent-color);
     }
  
+    @media screen and (max-width: 767px) {
+        max-width: 210px;
+        width: calc((100%-4*15)/2);
+        height: 92px;
+    }
 
     @media screen and (min-width: 768px){
         width: 226px;
