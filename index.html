@@ -27,15 +27,59 @@
         <nav class="container__nav">
           <a class="logo" href="./index.html">
             <span class="logo__span logo__span--accent">Web</span>Studio</a>
-            <button type="button" class="menu-button is-open" data-menu-button>
+            <button 
+            type="button" 
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+            >
               <svg 
-              width="40" 
-              height="40" 
+              width="24" 
+              height="16" 
               aria-label="Переключатель мобильного меню">
-                <use class="icon-crose" href="./images/icons.svg#icon-close-menu"></use>
-                <use class="icon-menu" href="./images/icons.svg#icon-menu"> </use>
+                <use class="menu-button__icon-crose" href="./images/icons.svg#icon-close-menu"></use>
+                <use class="menu-button__icon-menu" href="./images/icons.svg#icon-menu"> </use>
               </svg>
             </button>
+            <div class="menu-container" id="menu-container" data-menu >
+              <div class="navigation-container">
+                <nav class="navigation">
+                  <ul class="navigation__list">
+                    <li class="navigation__item">
+                      <a href="./index.html" class="navigation__link navigation__link--current">Студия</a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="./portfolio.html" class="navigation__link">Портфолио</a>
+                    </li>
+                    <li class="navigation__item">
+                      <a href="" class="navigation__link">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="contacts-container">
+                <ul class="list-group">
+                  <li class="list-group__item">
+                    <a href="mailto:info@devstudio.com" class="list-group__link">
+                      <svg class="list-group__icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                      </svg>
+                      info@devstudio.com
+                    </a>
+                  </li>
+                  <li class="list-group__item">
+                    <a href="tel:+380961111111" class="list-group__link">
+                      <svg class="list-group__icon" width="10" height="16">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                      </svg>
+                      +38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+
+              </div>
+            </div>
         </nav>
         
         <!-- <nav class="navigation">
@@ -517,7 +561,8 @@
         </form>
       </div> 
     </footer>
+    
     <script src="./js/modal.js"></script>
-    <script srs="./js/menu.js"> </script>
+    <script src="./js/menu.js"> </script>
   </body>
 </html>
