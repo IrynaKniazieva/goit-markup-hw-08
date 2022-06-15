@@ -631,6 +631,9 @@ ul {
 }
 
 .menu-button {
+  position: absolute;
+  top: auto;
+  right: 15px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -638,6 +641,7 @@ ul {
   padding: 0;
   border: none;
   background-color: transparent;
+  z-index: 10;
 }
 
 .menu-button:hover, .menu-button:focus {
@@ -651,6 +655,7 @@ ul {
 }
 
 .menu-button__icon-menu {
+  position: absolute;
   display: none;
 }
 
@@ -658,8 +663,14 @@ ul {
   display: block;
 }
 
-.is-open .menu-button__icon-crose {
+.is-open .menu-button__icon-close {
   display: none;
+}
+
+.menu-button__icon-close {
+  display: block;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .menu-container {
@@ -830,6 +841,12 @@ ul {
     padding-bottom: 30px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .list-group__link--color {
+    color: var(--accent-color);
   }
 }
 

@@ -1,6 +1,7 @@
 .header {
     position: relative;
     border-bottom: 1px solid #EEEEEE;
+    
 }
 
 .container__nav {
@@ -12,11 +13,16 @@
 }
 
 .menu-button {
+    position: absolute;
+    top: auto;
+    right: 15px;
     display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
+    z-index: 10;
+    
     &:hover,
     &:focus {
         fill: var(--accent-color);
@@ -28,6 +34,7 @@
 }
 
 .menu-button__icon-menu{
+    position: absolute;
     display: none;
     
 }
@@ -38,13 +45,19 @@
     display: block;
 }
 
-.is-open .menu-button__icon-crose {
+.is-open .menu-button__icon-close {
     display: none;
+    
+}
+
+.menu-button__icon-close {
+    display: block;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .menu-container {
-   
-    
+      
     text-align: center;
     background-color: #FFFFFF;
     padding: 48px 40px;
@@ -217,8 +230,6 @@
     display: flex;
     align-items: center;
     
-
-    
     
     color: var(--primary-text-color);
     font-weight: 500;
@@ -237,10 +248,17 @@
         padding-top: 30px;
         padding-bottom: 30px; 
         line-height: 1.14;
-    letter-spacing: 0.02em;
+        letter-spacing: 0.02em;
+        
     }
     
   }
+
+.list-group__link--color {
+@media screen and (min-width: 480px) {
+color: var(--accent-color);
+ }
+}
 
 
 .list-group__icon {
