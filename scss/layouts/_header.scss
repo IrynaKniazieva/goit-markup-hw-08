@@ -145,6 +145,11 @@
         padding: 0;
         margin-right: 84px;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 305px;
+    }
+
   
 }
 
@@ -232,6 +237,7 @@
 
         // add
     @media screen and (max-width: 767px) {
+        
          max-width: 480px;
          width: 100%;
          
@@ -240,15 +246,19 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
-        
         justify-content: center;
         flex-direction: column;
-
-       
         margin-left: auto;
         padding: 0;
         
-        list-style: none;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        
     }
     
     
@@ -266,6 +276,13 @@
             padding-bottom: 0;
         }
     }
+
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+        
+    }
+
+
 
     // @media screen and (max-width: 1199px) {
     //     margin: 0;
