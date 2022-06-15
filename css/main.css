@@ -617,6 +617,10 @@ ul {
   border-bottom: 1px solid #EEEEEE;
 }
 
+.header-container {
+  text-align: start;
+}
+
 .container__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -674,6 +678,9 @@ ul {
 }
 
 .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
   background-color: #FFFFFF;
   padding: 48px 40px;
@@ -685,7 +692,13 @@ ul {
   .menu-container {
     display: none;
     position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 480px;
     width: 100%;
+    height: 796px;
   }
   .menu-container.is-open {
     display: block;
@@ -707,6 +720,13 @@ ul {
 
 .navigation-container {
   margin-bottom: 306px;
+}
+
+.contacts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -844,7 +864,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .list-group__link--color {
     color: var(--accent-color);
   }
@@ -865,6 +885,48 @@ ul {
   .list-group__item + .list-group__item {
     margin-left: 48px;
   }
+}
+
+.social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-container__item {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.social-container__item:last-child {
+  padding-right: 0;
+  border: none;
+}
+
+.social-container__item:first-child {
+  padding-left: 0;
+}
+
+.social-container__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.social-container__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 /* hero */
