@@ -5,6 +5,9 @@
     
     background-color: var(--bkg-dark-color);
     
+    @media screen and (min-width: 1200px) {
+        height: 252px;
+    }
 }
 
 .footer__container {
