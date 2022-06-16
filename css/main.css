@@ -60,6 +60,7 @@ ul {
   /* outline: 1px solid red; */
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
@@ -1341,6 +1342,9 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: -15px;
 }
 
@@ -1355,6 +1359,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 15px;
+  height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   color: #AFB1B8;
