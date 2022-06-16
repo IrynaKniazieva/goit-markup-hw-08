@@ -7,11 +7,27 @@
     margin-left: auto;
     margin-right: auto;
     background-color: var(--bkg-dark-color);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/fon-hero.jpg) ;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/header-img_sm.jpg) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
     padding: 118px 0;
+
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/header-img_sm@2x.jpg) ;
+  }
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/header-img_md.jpg) ;
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/header-img_md@2x.jpg) ;
+        }
+    }
 
     @media screen and (min-width: 1200px) {
         padding: 200px 0;
@@ -20,6 +36,14 @@
         margin: 0;
         margin-left: auto;
         margin-right: auto;
+
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/header-img_lg.jpg) ;
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/header-img_lg@2x.jpg) ;
+        }
     }
 
 }
