@@ -83,6 +83,7 @@
     max-width: 480px;
     width: 100%;
     height: 796px;
+    z-index: 2;
 
     &.is-open {
         display: block;
@@ -203,6 +204,8 @@
         
         line-height: 1.14;
         letter-spacing: 0.06em;
+
+        
     }
     
     &--current {
@@ -227,6 +230,10 @@
     }
 
 }
+
+// .navigation__link--current {
+//     color: var(--accent-color)
+// }
 
 /* контакты в шапке */
 
@@ -367,6 +374,7 @@ border-right: 1px solid rgba(33, 33, 33, 0.2);
     display: flex;
     align-items: center;
     justify-content: start;
+    flex-wrap: wrap;
 
     @media screen and (min-width: 768px) {
         display: none;
