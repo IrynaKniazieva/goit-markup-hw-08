@@ -690,7 +690,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   background-color: #FFFFFF;
   padding: 48px 40px;
   top: 0;
@@ -705,9 +704,11 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: fixed;
     max-width: 480px;
     width: 100%;
-    height: 796px;
+    height: 100vh;
+    flex-direction: column;
     z-index: 2;
   }
   .menu-container.is-open {
@@ -726,9 +727,14 @@ ul {
 
 @media screen and (max-width: 767px) {
   .navigation__list {
-    max-width: 480px;
-    width: 100%;
-    margin-bottom: 306px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 302px;
     text-align: start;
   }
 }
@@ -822,13 +828,6 @@ ul {
           flex-direction: column-reverse;
 }
 
-@media screen and (max-width: 767px) {
-  .list-group {
-    max-width: 480px;
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .list-group {
     display: -webkit-box;
@@ -843,6 +842,7 @@ ul {
             flex-direction: column;
     margin-left: auto;
     padding: 0;
+    margin: 0;
   }
 }
 
@@ -886,12 +886,6 @@ ul {
 }
 
 .list-group__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 34px;
@@ -916,6 +910,12 @@ ul {
 @media screen and (max-width: 767px) {
   .list-group__link--color {
     color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .list-group__link--font {
+    font-size: 24px;
   }
 }
 
@@ -963,6 +963,12 @@ ul {
           justify-content: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .social-container__list {
+    margin-top: 64px;
+  }
 }
 
 @media screen and (min-width: 768px) {
