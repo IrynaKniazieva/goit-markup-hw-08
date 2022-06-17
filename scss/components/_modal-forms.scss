@@ -16,6 +16,8 @@
    
     overflow-y: scroll;
 
+    z-index: 100;
+
    &.is-hidden {
         opacity: 0;
         visibility: hidden;
@@ -31,7 +33,7 @@
 
 .modal-wrapper {
     position: absolute;
-    top: 40%;
+    top: 58%;
     left: 50%;
     
     background-color: var(--white-color);
