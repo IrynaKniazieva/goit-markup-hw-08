@@ -127,7 +127,7 @@
 
 }
 
-.navigation__list {
+.navigation-group {
     @media screen and (max-width: 767px) {
         display: flex;
         flex-direction: column;
@@ -154,7 +154,7 @@
   
 }
 
-.navigation__item {
+.navigation-group__item {
  
     @media screen and (min-width: 768px) {
         position: relative;
@@ -166,7 +166,7 @@
 } 
 
 
-.navigation__link {
+.navigation-group__link {
 
     display: block;
     color: var(--title-text-color);
@@ -366,7 +366,7 @@ border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 }
 
-.social-container__list {
+.social-container {
     display: flex;
     align-items: center;
     justify-content: start;
